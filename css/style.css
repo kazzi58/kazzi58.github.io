@@ -2604,6 +2604,8 @@ h1 {
 
 #hands {
 	text-align: center;
+	padding: 80px;
+	/*background-color: blueviolet;*/
 }
 
 input:checked ~ div .hand {
