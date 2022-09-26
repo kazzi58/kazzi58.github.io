@@ -2519,7 +2519,9 @@ h6 { font-size: 16px; }
 .galleryRow1{
 	/*display: flex;*/
 }
-
+#secondIntroPara{
+	margin-top: 20px;
+}
 @keyframes changeOrder {
 	from { z-index: 9;}
 	to { z-index: 1; }
