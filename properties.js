@@ -14,7 +14,7 @@ var dataDir = 'data/';
  * Relative path to the js directory
  * @type {string}
  */
-var jsDir = 'js/';
+var jsDir = 'js3/';
 
 /**
  * Relative path to the styles directory
