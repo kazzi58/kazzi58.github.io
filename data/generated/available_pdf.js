@@ -1,1 +1,1 @@
-define({availablePdf: ["9031270","ZHAO201432","7536530","10.1145:2683467.2683471","9776045","10.1007:978-3-642-15497-3_18","7931642","10.1145:2590296.2590336","7163043","6876246"]});
+define({availablePdf: ["personalpass2017","versipass2014","amnesia2016","ZHAO201432","xss2014","kamouflage","honeyencryption2014","passimg2022","10.1145:2590296.2590336","crackingnle2015","shamir2020"]});

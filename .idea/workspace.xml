@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d3a0c8-7fa7-4629-a829-8c8d64d9e558" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js3/app/init_page.js" beforeDir="false" afterPath="$PROJECT_DIR$/js3/app/init_page.js" afterDir="false" />
-    </list>
+    <list default="true" id="d0d3a0c8-7fa7-4629-a829-8c8d64d9e558" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +28,10 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/kazi/Projects/kazzi58.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -60,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663913845470</updated>
       <workItem from="1663913847408" duration="16538000" />
-      <workItem from="1715910703608" duration="55000" />
+      <workItem from="1715910703608" duration="653000" />
     </task>
     <servers />
   </component>
