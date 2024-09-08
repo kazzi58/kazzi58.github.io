@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Installation and Setup Guide for SafeGen Chrome Extension">
+    <title>SafeGen Extension Installation Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        p {
+            color: #555;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 4px 6px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        a {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SafeGen Extension Installation and Setup Guide</h1>
+        
+        <h2>Step 1: Generate a GitHub Personal Access Token</h2>
+        <p>To allow the SafeGen extension to work with your GitHub account, you'll need to generate a Personal Access Token:</p>
+        <ol>
+            <li>Go to your GitHub account and open the <strong>Developer Settings</strong>:</li>
+            <ul>
+                <li>Click on your profile picture in the top-right corner.</li>
+                <li>Select <strong>Settings</strong>.</li>
+                <li>Scroll down and click <strong>Developer settings</strong>.</li>
+                <li>In the left-hand menu, click <strong>Personal access tokens</strong>.</li>
+            </ul>
+            <li><strong>Generate a new token</strong>:</li>
+            <ul>
+                <li>Click <strong>Generate new token</strong>.</li>
+                <li>Give it a name (e.g., "SafeGen Access").</li>
+                <li>Under <strong>Select scopes</strong>, check the box for <code>gist</code> to allow read and write access.</li>
+                <li>Scroll down and click <strong>Generate token</strong>.</li>
+                <li><strong>Copy</strong> the generated token.</li>
+            </ul>
+        </ol>
+
+        <h2>Step 2: Replace the Token in the Extension</h2>
+        <p>Before loading the extension, you'll need to replace the placeholder token in the code:</p>
+        <ol>
+            <li>Extract the ZIP file of the extension to a folder on your computer.</li>
+            <li>Navigate to <code>src/gistOperations.js</code>.</li>
+            <li>Open <code>gistOperations.js</code> in any text editor (e.g., Notepad, VSCode).</li>
+            <li>Find the line where the token is defined:</li>
+            <pre><code>const GITHUB_TOKEN = "your-token-here";</code></pre>
+            <li>Replace <code>"your-token-here"</code> with the token you copied from GitHub.</li>
+            <li>Save the file.</li>
+        </ol>
+
+        <h2>Step 3: Enable Developer Mode in Chrome</h2>
+        <p>To load the extension, you'll need to enable Developer mode in Chrome:</p>
+        <ol>
+            <li>Open Chrome and go to the Extensions page by typing <code>chrome://extensions/</code> in the address bar and hitting Enter.</li>
+            <li>In the top-right corner, toggle the switch to enable <strong>Developer mode</strong>.</li>
+        </ol>
+
+        <h2>Step 4: Load the Extension</h2>
+        <p>Now you can load the SafeGen extension into Chrome:</p>
+        <ol>
+            <li>On the Extensions page (with Developer mode enabled), click <strong>Load unpacked</strong>.</li>
+            <li>Navigate to the folder where you extracted the extension (and already replaced the token).</li>
+            <li>Select the folder.</li>
+            <li>The SafeGen extension will now appear in your list of extensions.</li>
+        </ol>
+        
+        <p>If you encounter any issues during the setup, feel free to <a href="mailto:your-email@example.com">contact us</a> for assistance.</p>
+    </div>
+</body>
+</html>
