@@ -51,56 +51,42 @@
 <body>
     <div class="container">
         <h1>SafeGen Extension Installation and Setup Guide</h1>
-        
-        <h2>Step 1: Generate a GitHub Personal Access Token</h2>
-        <p>To allow the SafeGen extension to work with your GitHub account, you'll need to generate a Personal Access Token:</p>
-        <ol>
-            <li>Go to your GitHub account and open the <strong>Developer Settings</strong>:</li>
-            <ul>
-                <li>Click on your profile picture in the top-right corner.</li>
-                <li>Select <strong>Settings</strong>.</li>
-                <li>Scroll down and click <strong>Developer settings</strong>.</li>
-                <li>In the left-hand menu, click <strong>Personal access tokens</strong>.</li>
-            </ul>
-            <li><strong>Generate a new token</strong>:</li>
-            <ul>
-                <li>Click <strong>Generate new token</strong>.</li>
-                <li>Give it a name (e.g., "SafeGen Access").</li>
-                <li>Under <strong>Select scopes</strong>, check the box for <code>gist</code> to allow read and write access.</li>
-                <li>Scroll down and click <strong>Generate token</strong>.</li>
-                <li><strong>Copy</strong> the generated token.</li>
-            </ul>
-        </ol>
 
-        <h2>Step 2: Replace the Token in the Extension</h2>
-        <p>Before loading the extension, you'll need to replace the placeholder token in the code:</p>
+        <h2>Step 1: Download and Install the SafeGen Extension</h2>
+        <p>To begin, download the SafeGen extension ZIP file from the link below:</p>
+        <p><a href="https://drive.google.com/file/d/1KtR7ljKEu9Rr_p5uM_KbhN4gih2f7uvB/view?usp=sharing" target="_blank">Download SafeGen Extension</a></p>
         <ol>
-            <li>Extract the ZIP file of the extension to a folder on your computer.</li>
-            <li>Navigate to <code>src/gistOperations.js</code>.</li>
-            <li>Open <code>gistOperations.js</code> in any text editor (e.g., Notepad, VSCode).</li>
-            <li>Find the line where the token is defined:</li>
-            <pre><code>const GITHUB_TOKEN = "your-token-here";</code></pre>
-            <li>Replace <code>"your-token-here"</code> with the token you copied from GitHub.</li>
-            <li>Save the file.</li>
-        </ol>
-
-        <h2>Step 3: Enable Developer Mode in Chrome</h2>
-        <p>To load the extension, you'll need to enable Developer mode in Chrome:</p>
-        <ol>
-            <li>Open Chrome and go to the Extensions page by typing <code>chrome://extensions/</code> in the address bar and hitting Enter.</li>
+            <li><strong>Unzip</strong> the downloaded ZIP file to a folder on your computer.</li>
+            <li>Open Chrome and go to <strong>chrome://extensions</strong> by typing it into the address bar and hitting Enter.</li>
             <li>In the top-right corner, toggle the switch to enable <strong>Developer mode</strong>.</li>
-        </ol>
-
-        <h2>Step 4: Load the Extension</h2>
-        <p>Now you can load the SafeGen extension into Chrome:</p>
-        <ol>
-            <li>On the Extensions page (with Developer mode enabled), click <strong>Load unpacked</strong>.</li>
-            <li>Navigate to the folder where you extracted the extension (and already replaced the token).</li>
-            <li>Select the folder.</li>
+            <li>Click the <strong>Load unpacked</strong> button.</li>
+            <li>Navigate to the folder where you unzipped the SafeGen extension and select the folder.</li>
             <li>The SafeGen extension will now appear in your list of extensions.</li>
         </ol>
-        
-        <p>If you encounter any issues during the setup, feel free to <a href="mailto:your-email@example.com">contact us</a> for assistance.</p>
+
+        <h2>Step 2: Generate a GitHub Personal Access Token</h2>
+        <p>Next, you'll need to generate a Personal Access Token from GitHub to allow the SafeGen extension to work with your gists:</p>
+        <ol>
+            <li><strong>Login</strong> to your GitHub account.</li>
+            <li>Go to this link: <a href="https://github.com/settings/tokens?type=beta" target="_blank">Generate GitHub Token</a></li>
+            <li>Click on the <strong>Account Permissions</strong> option.</li>
+            <li>Allow <strong>read and write</strong> access for <strong>gists</strong>.</li>
+            <li>Click <strong>Generate token</strong>.</li>
+            <li>Copy the generated token.</li>
+        </ol>
+
+        <h2>Step 3: Configure the SafeGen Extension</h2>
+        <p>Now that the extension is installed and you have a GitHub token, follow these steps:</p>
+        <ol>
+            <li>In Chrome, go to the <strong>Extensions</strong> menu and <strong>pin</strong> the SafeGen extension for easy access.</li>
+            <li>Click on the SafeGen extension icon in the toolbar to open its <strong>home page</strong>.</li>
+            <li>Paste the GitHub token you generated earlier into the input field on the home page.</li>
+            <li>Click <strong>Save</strong>.</li>
+        </ol>
+
+        <h2>Step 4: Proceed to Task Testing</h2>
+        <p>To begin the tasks and proceed further with testing, click the link below:</p>
+        <p><a href="your-task-link-here" target="_blank">Proceed with Testing</a></p>
     </div>
 </body>
 </html>
