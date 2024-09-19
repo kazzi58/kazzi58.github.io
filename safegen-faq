@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Password Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-item h3 {
+            margin: 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .faq-item h3:hover {
+            background-color: #e1e1e1;
+        }
+        .faq-item p {
+            margin: 0;
+            padding: 10px;
+            background-color: #fff;
+            display: none;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+    
+    <div class="faq-item">
+        <h3>How does this extension generate passwords?</h3>
+        <p>The extension uses a combination of Shamir's Secret Sharing and security answers provided by the user to generate unique passwords for each domain. The domain name, along with your security answers, is used to create a unique polynomial equation, allowing for the generation and recovery of secure passwords.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>Can I use this extension on different browsers?</h3>
+        <p>Yes, this extension is compatible with Chromium-based browsers like Chrome and Edge. You can use the same set of security answers and GitHub Gist for password recovery across these browsers.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>What happens if I forget my security answers?</h3>
+        <p>You can recover your password if you can correctly remember any 2 out of the 4 security answers. It’s important to choose answers that you can reliably remember.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>How does this extension store passwords?</h3>
+        <p>The extension does not store your passwords. For recovery purposes, it stores random values on a GitHub Gist, but these values cannot be used to recover your secret. While the Gist is generally private, even if it is public, the contents cannot be used to recover your secret.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>Is it safe to use this extension for sensitive accounts?</h3>
+        <p>The extension is designed with security in mind. It generates unique, complex passwords for each domain using Shamir's Secret Sharing. However, like any password manager, it is crucial to use it responsibly, ensuring that your GitHub Gist is kept secure and your security answers are not shared.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>Can I use the extension to recover passwords on a different device?</h3>
+        <p>Yes, as long as you have access to your GitHub Gist and remember your security answers, you can recover passwords on any device with this extension installed.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>What is Shamir's Secret Sharing, and how is it used in this extension?</h3>
+        <p>Shamir's Secret Sharing is a cryptographic method that splits a secret into parts, requiring a subset of those parts to reconstruct it. In this extension, it uses a (5, 7) scheme where the domain and four security answers are required to generate the password. This method ensures that passwords are unique for each domain and recoverable with the correct inputs.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>How do I update my GitHub token for the extension?</h3>
+        <p>Press the logout button in the settings menu and enter your updated token.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h3>Can I change the security questions after setting up the extension?</h3>
+        <p>Press the logout button in the settings menu and enter your updated answers.</p>
+    </div>
+</div>
+
+<script>
+    // Script to toggle the FAQ answers
+    document.querySelectorAll('.faq-item h3').forEach(function (faqTitle) {
+        faqTitle.addEventListener('click', function () {
+            var answer = this.nextElementSibling;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
